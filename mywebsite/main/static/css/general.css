@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+
+/* Здесь хранится дизайн, который затрагивает все страницы сайта */
+body {
+  font-family: Arial, sans-serif; /* Шрифт */
+  color: #333; /* Цвет текста */
+}
+
+/* Стили для параграфов */
+.jumbotron {
+    padding: 1em;
+    border-radius: 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.alert {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.alert img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border-top: 2px solid silver #808080;
+    width: 95%;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+/* Стили для заголовков */
+.display-4 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.lead {
+  text-indent: 60px;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 576px) {
+  .jumbotron {
+    margin-top: 10px;
+  }
+  .alert {
+     width: 100%;
+     padding-top: 1em;
+  }
+  .display-4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .lead {
+    text-indent: 30px;
+    font-size: 15px;
+  }
+}

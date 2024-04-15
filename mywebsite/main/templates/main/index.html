@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная страница</title>
+    {% load static %}
+    <!-- Подключение файла стилей Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Подключение файла скриптов jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключение файла скриптов Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/general.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #2a231d;">
+      <div class="container-fluid">
+          <a hreaf="#" class="navbar-brand">
+              <img src="static/img/emblema-v0.png"
+                   style="width: auto; height: 50px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a href="/" class="nav-link">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/history" class="nav-link">История</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/excursus" class="nav-link">Экскурсия</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/nature" class="nav-link">Природа</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- Карусель на главной странце -->
+  <div class="carousel slide" data-ride="carousel" id="slides">
+      <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="static/img/slide-1.jpg">
+              <div class="carousel-caption">
+                  <h1 class="display-2">Спланируйте своё путешествие</h1>
+                  <h3>Узнайте про интересные для посещения места Кургальского полуострова</h3>
+                  <button type="button" onclick="window.location.href = '/excursus';" class="btn btn-outline-light btn-lg">Узнайте больше</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="static/img/slide-2.jpg">
+              <div class="carousel-caption">
+                  <h1 class="display-2">Познакомьтесь с природой</h1>
+                  <h3>Узнайте, каких животных из Красной книги можно встретить на Кургальском полуострове</h3>
+                  <button type="button" onclick="window.location.href = '/nature';" class="btn btn-outline-light btn-lg">Узнайте больше</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="static/img/slide-3.jpg">
+              <div class="carousel-caption">
+                  <h1 class="display-2">Прикоснитесь к истории</h1>
+                  <h3>Отправьтесь прямо сейчас в прошлое Кургальского полуострова</h3>
+                  <button type="button" onclick="window.location.href = '/history';" class="btn btn-outline-light btn-lg">Узнайте больше</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Примечание -->
+  <div class="container-fluid">
+      <div class="row jumbotron">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+              <h1 class="lead" style="font-weight: bold;">Знали ли Вы, что природа Кургальского полуоcтрова находится под государственной защитой?</h1>
+              <h1 class="lead">Кургальский заказник — государственный природный комплексный заказник. Расположен на территории Кингисеппского района Ленинградской области, в 45 км северо-западнее города Кингисепп ...</h1>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+              <a href="#"><button class="btn btn-custom btn-lg" onclick="window.location.href = '/nature';" type="button">Читать далее</button></a>
+          </div>
+      </div>
+  </div>
+  <!-- Блок с текстом -->
+  <div class="container-fluid">
+      <div class="row text-center alert">
+          <div class="col-12">
+              <h1 class="display-4">Добро пожаловать в Ленинградскую область!</h1>
+          </div>
+      </div>
+      <div class="row text-left alert" style="padding-top: 0em;">
+          <div class="col-12">
+              <p class="lead"> Удивительным местом Ленинградской области является Кургальский полуостров.
+                  Это уголок природы, который удалось сохранить практически в первозданном виде.
+
+
+              </p>
+              <p class="lead"> Кургальский полуостров является самой западной точкой в России, не считая Калининграда.
+                  Он расположен на территории Кингисеппского района, в южной части Финского залива.
+                  От континентальной земли полуостров частично отделяет река Луга.
+                  Сама же земля "мощёных дорог" разделяет и образует две губы: Нарвскую и Лужскую.
+                  Береговая линия полуострова наделена множеством живописных мысов, самым северным из которых является Питкенен-нос.
+                  Местный климат - умеренно-морской, с небольшими колебаниями температуры.
+                  То есть летом средняя температура составляет +15°, а зимой коллеблится в районе -5°.
+              </p>
+              <script type="text/javascript" charset="utf-8"
+                      async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1cca1934f5d67f21cb28f0b2c03f4fd0429f39d57bc04e2e24fbdb427e6d008e&amp;width=100%25&amp;height=425&amp;lang=ru_RU&amp;scroll=true"></script>
+              <p class="lead">
+                  Кургальский полуостров — это место с богатой историей, удивительной природой и красивыми пейзажами.
+                  Добро пожаловать на наш сайт, который посвящён этому удивительному уголку Ленинградской области.
+                  Здесь Вы можете познакомится с основными памятниками, природой, историей и увидеть фотографии этих мест.
+                  Откройте для себя Кургальский полуостров!
+              </p>
+          </div>
+      </div>
+      <hr>
+  </div>
+</body>
+</html>

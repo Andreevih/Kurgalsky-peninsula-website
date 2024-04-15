@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Экскурс</title>
+    <!-- Подключение файла стилей Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Подключение файла скриптов jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключение файла скриптов Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Подключение API Яндекс -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a199c37d-ba95-45d3-819c-ed6ef0d8f0ed&lang=ru_RU&load=Geolink" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/static/css/general.css">
+    <link rel="stylesheet" href="/static/css/excursus.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #2a231d;">
+      <div class="container-fluid">
+          <a hreaf="#" class="navbar-brand">
+              <img src="static/img/emblema-v0.png"
+                   style="width: auto; height: 50px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a href="/" class="nav-link">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/history" class="nav-link">История</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a href="/excursus" class="nav-link">Экскурсия</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/nature" class="nav-link">Природа</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container-fluid">
+      <!-- Список самых популярных мест-->
+      <div class="row text-center alert">
+          <div class="col-12">
+              <h1 class="display-4">Интересные места для посещения:</h1>
+          </div>
+      </div>
+      <div class="container card-holder">
+          <!-- Курголово -->
+          <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><strong>Курголово</strong></h3>
+              <img src='static/img/excursus/IMG_20220709_194844.jpg'>
+              <p class="card-text">
+                  <strong>Курголово</strong>
+                   [координаты: <span class="ymaps-geolink" data-type="geo"
+                                      data-description="Курголово"
+                                      data-bounds="[[59.795384, 28.083633], [59.758908, 28.171817]]">59.772472, 28.129103</span>]
+                  — самый северный населённый пункт полуострова.
+                  Деревня раскинулась вдоль берегов Липовской протоки, соединяющей Липовское озеро с Финским заливом.
+                  Курголово является излюблинным местом у рыбаков со всего полуострова.
+                  Это не удивительно, ведь в водах протоки водятся как морские, так и пресноводные рыбы.
+                  </p>
+            </div>
+          </div>
+          <!-- Липовское озеро -->
+          <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><strong>Липовское озеро</strong></h3>
+              <img src='static/img/excursus/IMG_20230708_191537.jpg'>
+              <p class="card-text">
+                  <strong>Липовское озеро</strong>
+                   [координаты: <span class="ymaps-geolink" data-type="geo" data-description="Липовское озеро" data-bounds="[[59.776350, 28.075709], [59.707406, 28.258725]]">59.750663, 28.144257</span>]
+                  — самое крупное на полуострове и единственное солёное озеро в Ленинградской области. Популярное место среди туристов.
+                  Об озере существует множество легенд. Самая популярная гласит, что на дне Липовского покоится затонувший корабль.
+                  </p>
+                  <p>Площадь озера — 5,3 км², площадь водосборного бассейна — 44,6 км². Располагается на высоте 0,0 метров над уровнем моря.</p>
+            </div>
+          </div>
+          <!-- Белое озеро -->
+          <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><strong>Озеро Белое</strong></h3>
+              <img src='static/img/excursus/IMG_20220709_173227.jpg'>
+              <p class="card-text">
+                  <strong>Озеро Белое</strong>
+                   [координаты: <span class="ymaps-geolink" data-type="geo" data-description="Озеро Белое" data-bounds="[[59.723756, 28.021002], [59.664459, 28.253746]]">59.690697, 28.115366</span>]
+                  — второе по величине, после Липовского, озеро Кургальского полуострова. Своё название оно носит из-за глинястого дна, благодаря которому вода приобретает белый цвет.
+                  Здесь не многолюдно, как на Липовском озере, из-за его труднодоуступности, поэтому туристы здесь редкость.
+                  Это делает озеро Белое одним из самых уединённых и тихих мест на полуострове.
+                  </p>
+                  <p>Площадь озера — 3,2 км², площадь водосборного бассейна — 9,2 км². Располагается на высоте 20,3 метров над уровнем моря.</p>
+            </div>
+          </div>
+          <!-- Памятники -->
+          <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><strong>Мемориал ингерманландским финнам</strong></h3>
+                <img src='static/img/excursus/w5u7moTkA1g.jpg'>
+                <p class="card-text">
+                  <strong>«Мельничный ручей»</strong>
+                   (подробнее: <span class="ymaps-geolink" data-type="biz" data-description="Ингерманландским финнам" data-bounds="[[59.686802, 28.009412], [59.666876, 28.082107]]">Ингерманландским финнам</span>),
+                    более известный как Мемориал ингерманландским финнам — мемореальный комплекс, посвящённый удивительной и трагичной судьбе финского мельника Юлле Пантелея.
+                    Мальчишкой он попал юнгой на парусник, позже закончил Нарвскую мореходную школу и стал шкипером.
+                    Побывал во многих странах Европы, выучил несколько языков, но вернулся в родные края – чтобы стать мельником.
+                    Своей семьи Юлле Пантелей не завел, из родни остались только внучатые племянники в деревне Гакково.
+                    Этот финский мельник в тайне от немцев помогал жителям деревни делясь с ними мукой.
+                    Юлле расстреляли немцы, когда он отказался уезжать из этих мест. Ему был 91 год.
+                    Сегодня на месте, где когда-то стояла мельница, обустроен музей под открытым небом.
+                </p>
+                <p>Братья Андрей и Иван Койвунен из соседней деревни Конново, будучи мальчишками, часто слушали рассказы Юлле о морских путешествиях.
+                    Возможно, это и предопределило их будущее: впоследствии оба стали капитанами ледоколов «Ермак» и «Литке».
+                    В 1937 году братья были репрессированы.
+                    Андрей Иванович вышел на свободу перед самой войной, а во время войны ходил по северному морскому пути.
+                    Иван Койвунен был приговорен Комиссией НКВД и Прокуратуры СССР к высшей мере наказания и расстрелян в январе 1938 г.
+                    В память о братьях Койвунен, по соседству с мельницей Пантелея, установлен памятный знак и парус с флагом Ингерманландии.
+                </p>
+            </div>
+          </div>
+          <!-- Родник -->
+          <div class="card">
+            <div class="card-body">
+                <h3 class="card-title"><strong>Святой источник Казанской иконы Божией Матери</strong></h3>
+                <img src='static/img/excursus/IMG_20230708_185555.jpg'>
+                <p class="card-text">
+                  <strong>Святой источник Казанской иконы Божией Матери</strong>
+                   (подробнее: <span class="ymaps-geolink" data-type="biz" data-description="Святой источник Казанской иконы Божией Матери" data-bounds="[[59.707826, 28.189072], [59.695930, 28.225762]]">Святой источник</span>)
+                    — родник пресной воды неподалёку от деревни Выбье.
+                    Он славится с давних времен - вода его считается целебной.
+                    Рядом с источником располагается часовня "Казанской " иконы Божией Матери.
+                    Ниже по течению родника находится купель во имя Николая Чудотворца.
+                    Воду из родника не рекомендуется пить только в апреле, когда талые воды попадают в низине в родник.
+                </p>
+            </div>
+          </div>
+      </div>
+      <hr>
+  </div>
+
+</body>
+</html>
